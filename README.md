@@ -81,4 +81,3 @@ Ce script a été testé uniquement sur des serveurs Debian. Assurez-vous de tes
 ## Licence
 
 Ce script est fourni "tel quel", sans aucune garantie explicite ou implicite. Vous êtes libre de l'utiliser et de le modifier selon vos besoins.
-```

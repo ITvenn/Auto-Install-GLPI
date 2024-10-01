@@ -2,7 +2,7 @@
 
 ## Description
 
-Ce script Bash permet l'installation automatique de GLPI (Gestionnaire Libre de Parc Informatique) sur un serveur Ubuntu/Debian. Vous pouvez spécifier la version de GLPI que vous souhaitez installer, et il configure également Apache, PHP, MariaDB, et les paramètres nécessaires pour le bon fonctionnement de GLPI.
+Ce script Bash permet l'installation automatique de GLPI (Gestionnaire Libre de Parc Informatique) sur un serveur Debian. Vous pouvez spécifier la version de GLPI que vous souhaitez installer, et il configure également Apache, PHP, MariaDB, et les paramètres nécessaires pour le bon fonctionnement de GLPI.
 
 ## Fonctionnalités
 
@@ -18,7 +18,7 @@ Ce script Bash permet l'installation automatique de GLPI (Gestionnaire Libre de 
 
 Avant d'exécuter ce script, assurez-vous d'avoir :
 
-- Un serveur avec Ubuntu ou Debian.
+- Un serveur avec Debian 12.
 - Les droits administrateurs (`sudo`).
 - Une connexion Internet pour télécharger les paquets et GLPI.
 
@@ -39,7 +39,7 @@ Avant d'exécuter ce script, assurez-vous d'avoir :
    sudo ./script_installation_glpi.bash
    ```
 
-4. Le script vous demandera de saisir la version de GLPI souhaitée dans le format `X.X.X`. Exemple : `10.0.6`.
+4. Le script vous demandera de saisir la version de GLPI souhaitée dans le format `X.X.X`. Exemple : `10.0.16`.
 
 5. Vous devrez confirmer l'installation, entrer l'adresse IP de votre serveur, et configurer un mot de passe root pour la base de données MariaDB.
 
@@ -53,9 +53,9 @@ Voici un exemple de session d'installation :
 
 ```
 $ sudo ./script_installation_glpi.bash
-Veuillez entrer le numero de version GLPI souhaité dans le format suivant X.X.X : 10.0.6
-Voulez-vous vraiment installer la version 10.0.6 de GLPI ? (o/n) : o
-Installation de GLPI version 10.0.6...
+Veuillez entrer le numero de version GLPI souhaité dans le format suivant X.X.X : 10.0.16
+Voulez-vous vraiment installer la version 10.0.16 de GLPI ? (o/n) : o
+Installation de GLPI version 10.0.16...
 Installation d'Apache
 Veuillez entrer l'adresse IP de votre serveur dans le format suivant : X.X.X.X : 192.168.1.100
 Installation de PHP...

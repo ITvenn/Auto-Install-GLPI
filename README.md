@@ -1,5 +1,3 @@
-Voici un modèle de fichier `README.md` pour votre script d'installation automatique de GLPI. Ce fichier est conçu pour être utilisé dans un dépôt GitHub avec une mise en forme en Markdown :
-
 # Script d'Installation Automatique de GLPI
 
 ## Description

@@ -1,6 +1,5 @@
 Voici un modèle de fichier `README.md` pour votre script d'installation automatique de GLPI. Ce fichier est conçu pour être utilisé dans un dépôt GitHub avec une mise en forme en Markdown :
 
-```markdown
 # Script d'Installation Automatique de GLPI
 
 ## Description
@@ -31,7 +30,6 @@ Avant d'exécuter ce script, assurez-vous d'avoir :
    ```bash
    git clone <lien_du_depot>
    cd <dossier_du_depot>
-   ```
 
 2. Donnez les droits d'exécution au script :
    ```bash
@@ -76,7 +74,7 @@ Mot de passe par défaut : glpi
 
 ## Avertissement
 
-Ce script a été testé sur des serveurs Ubuntu et Debian. Assurez-vous de tester dans un environnement contrôlé avant de l'exécuter en production.
+Ce script a été testé uniquement sur des serveurs Debian. Assurez-vous de tester dans un environnement contrôlé avant de l'exécuter en production.
 
 ## Auteur
 
@@ -86,6 +84,3 @@ Ce script a été testé sur des serveurs Ubuntu et Debian. Assurez-vous de test
 
 Ce script est fourni "tel quel", sans aucune garantie explicite ou implicite. Vous êtes libre de l'utiliser et de le modifier selon vos besoins.
 ```
-
-Ce `README.md` vous permettra d'expliquer clairement l'utilisation de votre script ainsi que les étapes nécessaires pour son exécution. Il est important de personnaliser les sections comme les liens du dépôt si nécessaire.
- 

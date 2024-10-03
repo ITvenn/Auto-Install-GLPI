@@ -4,17 +4,17 @@
 # Auteur : HAMEL Vincent
 #
 # Description :
-# Script d'installation' automatique de GLPI et de la version souhaitée.
+# Script d'installation automatique de GLPI et de la version souhaitée.
 #
 # --------------------------------------------------------------------------------
 
-# Récuperation du chemin ou est executer le script
+# Récupération du chemin où est executer le script
 chemin=$(pwd);
 
 
 
-# Choix de la version souhaité
-echo -n "Veuillez entrer le numero de version GLPI souhaité dans le format suivant X.X.X"
+# Choix de la version souhaitée
+echo -n "Veuillez entrer le numéro de version GLPI souhaité dans le format suivant X.X.X"
 read version
 echo
 echo "Voulez-vous vraiment installer la version ${version} de GLPI ? (o/n)"
@@ -148,7 +148,7 @@ EOF
     a2enconf php8.2-fpm
     sed -i 's/^session.cookie_httponly\s*=.*/session.cookie_httponly = on/' /etc/php/8.2/fpm/php.ini
     echo "Démarrage de GLPI..."
-    systemctl restart apache2 php8.2-fpm.service && echo "GLPI est maintenant en ligne identifiant et mot de passe par défaut glpi/glpi ! http://$ip_server" || { echo -e "\E[31mErreur : échec du redémarrage de GLPI.\E[0m"; exit 1; }
+    systemctl restart apache2 php8.2-fpm.service && echo "GLPI est maintenant en ligne. Identifiant et mot de passe par défaut glpi/glpi ! http://$ip_server" || { echo -e "\E[31mErreur : échec du redémarrage de GLPI.\E[0m"; exit 1; }
 
     # Sécurité Suppression du script d'installation
     rm /var/www/html/glpi/install/install.php

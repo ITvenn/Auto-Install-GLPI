@@ -151,7 +151,7 @@ EOF
     systemctl restart apache2 php8.2-fpm.service && echo "GLPI est maintenant en ligne. Identifiant et mot de passe par défaut glpi/glpi ! http://$ip_server" || { echo -e "\E[31mErreur : échec du redémarrage de GLPI.\E[0m"; exit 1; }
 
     # Sécurité Suppression du script d'installation
-    rm /var/www/html/glpi/install/install.php
+    #rm /var/www/html/glpi/install/install.php
     rm $chemin/script_installation_glpi.bash && echo "Suppression du script d'installation !" || { echo -e "\E[31mErreur : échec suppression du script d'installation.\E[0m"; exit 1; }
 
 else

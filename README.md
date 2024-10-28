@@ -17,8 +17,8 @@ Ce script Bash permet l'installation automatique de GLPI (Gestionnaire Libre de 
 ## Prérequis
 
 Avant d'exécuter ce script, assurez-vous d'avoir :
-
 - Un serveur avec Debian 12.
+- Effectuer une snapshot de votre Debian
 - Les droits administrateurs (`sudo`).
 - Une connexion Internet pour télécharger les paquets et GLPI.
 

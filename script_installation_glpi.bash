@@ -130,17 +130,17 @@ EOF
     touch /var/www/html/glpi/inc/downstream.php
 
     cat <<EOF >> /var/www/html/glpi/inc/downstream.php
-    <?php
-    define('GLPI_CONFIG_DIR', '/etc/glpi/');
-    if (file_exists(GLPI_CONFIG_DIR . '/local_define.php')) {
-        require_once GLPI_CONFIG_DIR . '/local_define.php';
-    }
+<?php
+define('GLPI_CONFIG_DIR', '/etc/glpi/');
+if (file_exists(GLPI_CONFIG_DIR . '/local_define.php')) {
+    require_once GLPI_CONFIG_DIR . '/local_define.php';
+}
 EOF
     touch /etc/glpi/local_define.php
     cat <<EOF >> /etc/glpi/local_define.php
-    <?php
-    define('GLPI_VAR_DIR', '/var/lib/glpi/files');
-    define('GLPI_LOG_DIR', '/var/log/glpi');
+<?php
+define('GLPI_VAR_DIR', '/var/lib/glpi/files');
+define('GLPI_LOG_DIR', '/var/log/glpi');
 EOF
     # Redémarrer le serveur Apache pour appliquer les changements
     a2enmod rewrite
